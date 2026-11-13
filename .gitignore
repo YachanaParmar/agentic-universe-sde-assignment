@@ -9,3 +9,28 @@ data_large/
 reports/
 final_state.csv
 .pytest_cache/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# Local databases and backups
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+
+# Secrets
+.env
+.env.*
+*.key
+.hmac_key
+
+# Generated reports
+output/
+
+# Generated input datasets
+data/
+

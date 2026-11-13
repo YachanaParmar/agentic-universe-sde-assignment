@@ -1,20 +1,33 @@
 # AI Usage Disclosure
 
-AI tools are allowed. We want to know **how** you used them, because using them well is a
-skill. Honest answers are never held against you. Discovering undisclosed use is.
-
 ## Tools used
-_e.g. Claude, Cursor, Copilot, ChatGPT, or "none"_
+
+ChatGPT (OpenAI).
 
 ## What I used them for
-_e.g. "scaffolded the FastAPI receiver", "explained Temporal activity retries", "wrote the first
-draft of the phone-normalisation tests"_
+
+I used ChatGPT to understand the assignment requirements, plan the SQLite architecture, generate initial Python implementations, develop normalization tests, troubleshoot Python and PowerShell errors, and create report-generation and validation commands.
+
+I also used ChatGPT to help prepare and review the submission documentation.
 
 ## What I wrote or decided myself
-_The parts that are your own thinking: design, data model, edge-case handling..._
+
+I selected Assignment A, configured the local development environment, generated the sample datasets, executed the pipeline, investigated errors, ran tests, checked the generated reports, and reviewed the submission requirements.
 
 ## Where the AI was wrong or unhelpful
-_At least one example of output you rejected or had to fix, and how you noticed._
+
+An earlier suggested modification to the reporting module introduced an indentation-related syntax error. I detected the issue through Python compilation, replaced the affected module with a corrected version, and verified that it compiled and generated reports successfully.
+
+Some suggested downloadable files were also unavailable, so I used the code provided directly in the conversation.
 
 ## How I verified AI-generated code
-_Tests, manual runs, reading it line by line..._
+
+- Ran 11 normalization tests successfully.
+- Compiled and executed the reporting module.
+- Generated all five required reports.
+- Checked that batch totals and bucket counts reconcile.
+- Verified that connected-call counts do not exceed total-call counts.
+- Reconciled duplicate-lead statistics against database totals.
+- Re-ingested both data drops and confirmed that lead and event counts remained unchanged.
+
+These checks validate important functionality but do not constitute exhaustive end-to-end testing.
